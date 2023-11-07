@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="src/css/normalize.css">
+   <link rel="stylesheet" href="src/css/style.css">
+   <title>Панели из сотового картона</title>
+</head>
+
+<body class="body">
+   <header class="header section-offset">
+      <div class="container header__container">
+         <div class="header__content flex">
+            <img src="src/img/logo.png" alt="cardboardpack" class="header__logo">
+            <div class="header__contacts flex">
+               <span class="header__text">Связаться с нами:</span>
+               <a href="tel:+375448909974" class="header__link tel">
+                  +375 (44) 890-99-74
+               </a>
+               <a href="mailto:cardboardpack@gmail.com" class="header__link mail">
+                  cardboardpack@gmail.com
+               </a>
+            </div>
+         </div>
+         <nav class="nav header__nav">
+            <ul class="header__list list-reset flex">
+               <li class="header__item">
+                  <a href="#" class="header__link">
+                     Каталог
+                  </a>
+               </li>
+               <li class="header__item">
+                  <a href="#" class="header__link">
+                     Акции
+                  </a>
+               </li>
+               <li class="header__item">
+                  <a href="#" class="header__link">
+                     Оплата и доставка
+                  </a>
+               </li>
+               <li class="header__item">
+                  <a href="#" class="header__link">
+                     О компании
+                  </a>
+               </li>
+               <li class="header__item">
+                  <a href="#" class="header__link">
+                     Контакты
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main class="main">
+      <section class="hero section-offset">
+         <div class="container hero__container flex">
+            <img src="src/img/cardboard.jpg" alt="cardboard" class="hero__img">
+            <div class="hero__info flex">
+               <h1 class="hero__title">
+                  Панели из сотового картона
+               </h1>
+               <p class="hero__desc">
+                  Сотовый картон — это прочный, экономичный и экологически чистый продукт.
+                  <br>
+                  Форма «Медовых сот» внутри конструкции позволяет выдерживать большие нагрузки, при этом материал
+                  остается
+                  безопасным и более дешевым чем дерево.
+               </p>
+               <span class="hero__price">
+                  15$/шт
+               </span>
+               <div class="hero__btns">
+                  <a href="#order" class="hero__btn btn">Узнать цену</a>
+                  <a href="tel:+375448909974" class="hero__btn btn">Консультация</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="order section-offset" id="order">
+         <div class="container order__container">
+            <h2 class="order__title">
+               Форма заказа
+            </h2>
+            <form class="order__form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+               <label class="input-content flex">
+                  <span class="input-name">
+                     Тип картона
+                  </span>
+                  <select class="input-select" name="type">
+                     <option value="Ящик">Ящик</option>
+                     <option value="Поддон">Поддон</option>
+                  </select>
+               </label>
+               <label class="input-content flex">
+                  <span class="input-name">
+                     Ограничение веса
+                  </span>
+                  <select class="input-select" name="weight">
+                     <option value="до 500кг">до 500кг</option>
+                     <option value="до 1000к">до 1000кг</option>
+                  </select>
+               </label>
+               <label class="input-content flex">
+                  <span class="input-name">
+                     Дата доставки
+                  </span>
+                  <input class="input-select" name="date" type="date">
+               </label>
+               <label class="input-content flex">
+                  <span class="input-name">
+                     Количество
+                  </span>
+                  <input class="input-select" name="quantity" type="number" min="1" max="50">
+               </label>
+               <button class="btn" type="submit">
+                  Заказать
+               </button>
+            </form>
+         </div>
+      </section>
+      <section class="product">
+         <div class="container product__container">
+            <ul class="product__list list-reset flex">
+               <li class="product__item flex">
+                  <img src="src/img/poddon.png" alt="pallet" class="product__img">
+                  <span class="product__title">Поддон</span>
+                  <a href="#order" class="btn product__btn">Заказать</a>
+               </li>
+               <li class="product__item flex">
+                  <img src="src/img/poddon.png" alt="pallet" class="product__img">
+                  <span class="product__title">Поддон</span>
+                  <a href="#order" class="btn product__btn">Заказать</a>
+               </li>
+               <li class="product__item flex">
+                  <img src="src/img/poddon.png" alt="pallet" class="product__img">
+                  <span class="product__title">Поддон</span>
+                  <a href="#order" class="btn product__btn">Заказать</a>
+               </li>
+            </ul>
+            <div class="product__content flex">
+               
+            </div>
+         </div>
+      </section>
+   </main>
+</body>
+
+</html>
